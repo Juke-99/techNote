@@ -1,0 +1,7 @@
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:09:06 +0900] "GET /techNote-Tomcat/watashinofolder/note.jsp HTTP/1.1" 200 1522 http-bio-8080-exec-1 337
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:09:06 +0900] "GET /techNote-Tomcat/css/layout.css HTTP/1.1" 200 653 http-bio-8080-exec-3 126
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:09:06 +0900] "GET /techNote-Tomcat/css/bootstrap.min.css HTTP/1.1" 200 150996 http-bio-8080-exec-2 203
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:10:04 +0900] "POST /techNote-Tomcat/InsertData HTTP/1.1" 200 6524 http-bio-8080-exec-5 2426
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:10:04 +0900] "GET /techNote-Tomcat/img/another.jpg HTTP/1.1" 200 60359 http-bio-8080-exec-6 34
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:22:51 +0900] "GET /techNote-Tomcat/css/bootstrap.min.css.map HTTP/1.1" 404 1033 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [20/Jan/2017:14:26:50 +0900] "POST /techNote-Tomcat/Search HTTP/1.1" 200 3527 http-bio-8080-exec-10 264

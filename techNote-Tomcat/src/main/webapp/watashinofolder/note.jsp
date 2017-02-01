@@ -31,7 +31,7 @@
         </div>
         <div class="form-group">
           <label>内容：</label>
-          <textarea class="form-control" rows="5" placeholder="タイトルの内容となる記事を書いてください。" name="description"></textarea>
+          <textarea class="form-control" rows="5" placeholder="タイトルの内容となる記事を書いてください。Markdown記法もしくは直接HTMLを入力することもできます（登録したあとの表示が良くなります）。" name="description"></textarea>
         </div>
         <input type="submit" class="btn btn-default" value="送信">
       </form>

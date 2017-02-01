@@ -2,6 +2,7 @@ package com.technotetomcat.dml;
 
 import com.technotetomcat.database.MySQLConnection;
 import com.technotetomcat.iterator.Todo;
+import com.technotetomcat.markdown.TransMarkdown;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -61,6 +62,7 @@ public class Select {
     String sql = "SELECT title,description,timestamp FROM todo ORDER BY timestamp DESC";
     String title, description, timestamp;
     ArrayList<Todo> todoList = new ArrayList<Todo>();
+    TransMarkdown transMarkdown = new TransMarkdown();
 
     try(Connection connection = con.getConnection();) {
 
@@ -70,7 +72,7 @@ public class Select {
       while(resultSet.next())
 			{
 				title = resultSet.getString("title");
-        description = resultSet.getString("description");
+        description = transMarkdown.transToMarkdown(resultSet.getString("description"));
         timestamp = resultSet.getString("timestamp");
 
         todoList.add(new Todo(title, description, timestamp));
@@ -87,6 +89,7 @@ public class Select {
     String title, description, timestamp;
     String[] word = searchWord.split("[ 　]+");
     ArrayList<Todo> todoList = new ArrayList<Todo>();
+    TransMarkdown transMarkdown = new TransMarkdown();
 
     try(Connection connection = con.getConnection();) {
       if(word.length > 1) {
@@ -111,7 +114,7 @@ public class Select {
       while(resultSet.next())
 			{
 				title = resultSet.getString("title");
-        description = resultSet.getString("description");
+        description = transMarkdown.transToMarkdown(resultSet.getString("description"));
         timestamp = resultSet.getString("timestamp");
 
         todoList.add(new Todo(title, description, timestamp));
@@ -128,6 +131,7 @@ public class Select {
     String title, description, timestamp;
     String[] word = searchWord.split("[ 　]+");
     ArrayList<Todo> todoList = new ArrayList<Todo>();
+    TransMarkdown transMarkdown = new TransMarkdown();
 
     try(Connection connection = con.getConnection();) {
       if(word.length > 1) {
@@ -152,7 +156,7 @@ public class Select {
       while(resultSet.next())
 			{
 				title = resultSet.getString("title");
-        description = resultSet.getString("description");
+        description = transMarkdown.transToMarkdown(resultSet.getString("description"));
         timestamp = resultSet.getString("timestamp");
 
         todoList.add(new Todo(title, description, timestamp));
@@ -169,6 +173,7 @@ public class Select {
     String title, description, timestamp;
     String[] word = searchWord.split("[ 　]+");
     ArrayList<Todo> todoList = new ArrayList<Todo>();
+    TransMarkdown transMarkdown = new TransMarkdown();
 
     try(Connection connection = con.getConnection();) {
       if(word.length > 1) {
@@ -192,7 +197,7 @@ public class Select {
       while(resultSet.next())
 			{
 				title = resultSet.getString("title");
-        description = resultSet.getString("description");
+        description = transMarkdown.transToMarkdown(resultSet.getString("description"));
         timestamp = resultSet.getString("timestamp");
 
         todoList.add(new Todo(title, description, timestamp));

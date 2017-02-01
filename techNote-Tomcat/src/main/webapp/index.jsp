@@ -36,7 +36,7 @@
             <p>
               今まで学んだ技術：<br>
               【プログラミング言語】<br>
-              Java,C,C++,JavaScript,HTML,CSS,Swift,Python3,Scala,Markdown<br>
+              Java,C,C++,JavaScript,HTML,CSS,Swift,Python3,Scala,Markdown,Ruby<br>
               【データベース】<br>
               MySQL,Oracle,sqlite<br>
               【開発環境】<br>
@@ -48,7 +48,7 @@
               【OS】<br>
               windows,Mac,Linux(Cent6 OS,Cent7 OS,ubuntu)<br>
               【OSS】<br>
-              Apache Tomcat,Apache Cordova,Apache Http Server,Apache Lucene,Apache Solr<br>
+              Apache Tomcat,Apache Cordova,Apache Http Server,Apache Lucene,Apache Solr,nginx<br>
               【その他】<br>
               Tex(LaTeX),物理（力学、量子力学、一般相対性理論、熱力学）,数学（解析学、線形代数、集合論）
             </p>
@@ -69,9 +69,9 @@
           <c:forEach var="t" items="${todo}">
             <div class="todo-box rounded">
               <h2>${t.title}</h2>
-              <p class="todo-description text-justify">
+              <div class="todo-description text-justify">
                 ${t.description}
-              </p>
+              </div>
               <p class="text-right"><small>投稿日時</small>：${t.timestamp}</p>
             </div>
           </c:forEach>
